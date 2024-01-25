@@ -1,0 +1,13 @@
+.main {
+  flex: 1 0 auto;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1920px;
+
+    @media screen and (max-width: 600px) {
+      padding: 0 15px;
+    }
+  }
+}

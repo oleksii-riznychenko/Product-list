@@ -1,0 +1,31 @@
+.product-details {
+  display: flex;
+  flex-direction: row;
+
+  &__image,
+  &__info {
+    flex: 0 0 50%;
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      user-select: none;
+      object-fit: contain;
+      pointer-events: none;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+
+    &__image {
+      flex: none;
+      height: 200px;
+      overflow: hidden;
+    }
+  }
+}

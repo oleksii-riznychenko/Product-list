@@ -1,0 +1,7 @@
+.layout {
+  display: flex;
+  min-height: 100%;
+  position: relative;
+  flex-direction: column;
+  transition: var(--transition-main);
+}
